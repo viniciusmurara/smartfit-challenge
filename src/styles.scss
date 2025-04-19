@@ -8,6 +8,18 @@
     --green: #2FC022;
 }
 
+* {
+    font-family: 'Gotham';
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
 @font-face {
     font-family: 'Gotham';
     src: url('assets/fonts/gotham-light.woff2') format('truetype');
