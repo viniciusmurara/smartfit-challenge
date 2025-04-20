@@ -2,7 +2,7 @@ form {
     display: flex;
     flex-direction: column;
     margin-inline: 10%;
-    margin-top: 40px;
+    margin-block: 40px;
     border: 4px solid var(--light-text);
     border-radius: 14px;
     padding: 24px;
@@ -97,4 +97,33 @@ hr {
     background-color: var(--light-text);
     cursor: pointer;
     border-color: var(--light-grey);
+}
+
+.form-buttons {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-buttons button {
+    font-size: 18px;
+    border-radius: 4px;
+    color: var(--dark-grey);
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 14px;
+    width: 25%;
+    cursor: pointer;
+    border: none;
+    margin-top: 56px;
+}
+
+.form-button-submit {
+    background-color: var(--yellow);
+}
+
+.form-button-clean {
+    background-color: white;
+    border: 2px solid var(--light-text) !important;
 }
