@@ -1,4 +1,4 @@
-<form action="">
+<form action="" [formGroup]="formGroup">
     <div class="form-info">
         <img src="icon-hour.png" alt="Icone de Horário" width="28">
         <p>Horário</p>
@@ -9,24 +9,24 @@
         <hr />
         <div class="form-option-line">
             <div>
-                <input type="radio">
-                <p>Manhã</p>
+                <input type="radio" name="hour" value="morning" formControlName="hour">
+                <label for="morning">Manhã</label>
             </div>
             <p>06:00 às 12:00</p>
         </div>
         <hr />
         <div class="form-option-line">
             <div>
-                <input type="radio">
-                <p>Tarde</p>
+                <input type="radio" name="hour" value="afternoon" formControlName="hour">
+                <label for="afternoon">Tarde</label>
             </div>
             <p>12:01 às 18:00</p>
         </div>
         <hr />
         <div class="form-option-line">
             <div>
-                <input type="radio">
-                <p>Noite</p>
+                <input type="radio" name="hour" value="night" formControlName="hour">
+                <label for="night">Noite</label>
             </div>
             <p>18:01 às 23:00</p>
         </div>
@@ -35,8 +35,8 @@
 
     <div class="form-show-info">
         <div>
-            <input type="checkbox">
-            <p>Exibir unidades fechadas</p>
+            <input type="checkbox" name="showClosed" formControlName="showClosed">
+            <label for="showClosed">Exibir unidades fechadas</label>
         </div>
         <p>{{ results.length }} resultados encontrados</p>
     </div>
