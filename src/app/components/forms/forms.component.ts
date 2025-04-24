@@ -19,4 +19,12 @@ export class FormsComponent {
       showClosed: false
     })
   }
+
+  onSubmit(): void {
+    console.log(this.formGroup.value)
+  }
+
+  onClean(): void {
+    this.formGroup.reset();
+  }
 }

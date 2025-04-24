@@ -67,11 +67,12 @@ hr {
 
 .form-show-info {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
     margin-top: 48px;
     color: var(--medium-text);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
 }
 
@@ -84,8 +85,8 @@ hr {
 
 .form-show-info input {
     appearance: none;
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
     border: 2.5px solid var(--light-grey);
     border-radius: 2px;
     outline: none;
@@ -101,9 +102,11 @@ hr {
 
 .form-buttons {
     display: flex;
-    gap: 16px;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 56px;
+    gap: 12px;
 }
 
 .form-buttons button {
@@ -113,10 +116,9 @@ hr {
     font-weight: 700;
     text-transform: uppercase;
     padding: 14px;
-    width: 25%;
+    width: 85%;
     cursor: pointer;
     border: none;
-    margin-top: 56px;
 }
 
 .form-button-submit {
@@ -126,4 +128,26 @@ hr {
 .form-button-clean {
     background-color: white;
     border: 2px solid var(--light-text) !important;
+}
+
+@media (min-width: 768px) {
+    .form-buttons {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .form-show-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 18px;
+    }
+
+    .form-buttons button {
+        width: 35%;
+    }
+
+    .form-buttons {
+        gap: 24px;
+    }
 }
