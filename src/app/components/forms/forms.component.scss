@@ -2,7 +2,7 @@ form {
     display: flex;
     flex-direction: column;
     margin-inline: 10%;
-    margin-block: 40px;
+    margin-block: 32px;
     border: 4px solid var(--light-text);
     border-radius: 14px;
     padding: 24px;
@@ -61,7 +61,7 @@ hr {
 }
 
 .form-option-line div input:checked { // radio
-    background-color: var(--light-text);
+    background-color: var(--medium-text);
     cursor: pointer;
 }
 
@@ -95,7 +95,7 @@ hr {
 }
 
 .form-show-info input:checked {
-    background-color: var(--light-text);
+    background-color: var(--medium-text);
     cursor: pointer;
     border-color: var(--light-grey);
 }
